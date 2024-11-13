@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+    <body>
+        <input type="text" id="userInput" placeholder="Enter a number">
+        <button onclick="checkInput()">Check</button>
+        <p id="demo"></p>
+
+        <script>
+            function checkInput()
+            {
+                //get the value from input then convert into num
+                let input=document.getElementById("userInput").value;
+                //convert input into num
+                let i=Number(input);
+                let display;
+                //check if alpahbet or number
+                               
+                 if(i<10){
+                    display="The number is less than 10";
+                }
+                else if (i>10){
+                    display="The number is higher than 10";
+                }
+                else if(i==10){
+                    display="The number is 10";
+                }
+                else{
+                    alert("Please insert a number");
+                }
+                document.getElementById("demo").innerHTML=display;
+            }
+        </script>
+    </body>
+</html>

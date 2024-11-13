@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            Question 1
+        </title>
+    </head>
+    <body>
+        <div id="myElement">
+            <p>Welcome to my website</p>
+        </div>
+        <script>
+            // Get the element with the id "myElement"
+            document.getElementById("myElement").innerHTML="Hello There"
+        </script>
+    </body>
+
